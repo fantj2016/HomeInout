@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.home.inout.mapper.FamilyInoutMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.home.inout.entity.FamilyInout">
+        <id column="id" property="id" />
+        <result column="family_id" property="familyId" />
+        <result column="income" property="income" />
+        <result column="outcome" property="outcome" />
+        <result column="total" property="total" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, family_id, income, outcome, total, update_time
+    </sql>
+
+</mapper>

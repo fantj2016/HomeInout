@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.home.inout.mapper.BigdataFamilyMemberMostSpendMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.home.inout.entity.BigdataFamilyMemberMostSpend">
+        <id column="id" property="id" />
+        <result column="family_name" property="familyName" />
+        <result column="family_member_name" property="familyMemberName" />
+        <result column="inout_type" property="inoutType" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, family_name, family_member_name, inout_type, create_time
+    </sql>
+
+</mapper>
